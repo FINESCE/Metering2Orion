@@ -1,0 +1,2 @@
+# Metering2Orion
+Metering2Orion consists of:      a REST service (developed in Java) which allow clients (e.g. DSOs) to register data about metering and load profile in a specific area into an instance of ORION Context Broker GE;     a Java client which accepts data about metering and load profile coming from the smart meters (via either an IoT gateway or an existing legacy system) and then “passes” the data to the above mentioned REST service.
