@@ -208,7 +208,7 @@ public class LoadDataInput {
 		int costant = 1;
 		
 		@SuppressWarnings("unchecked")
-		Map<String,String> map = (Map<String,String>) context.getAttribute("KwCostantsMaps");
+		Map<String,String> map = (Map<String,String>) context.getAttribute("KwCostantsMapps");
 				 
 		try {
 			if (map.get(load.getMeterId()) != null){
