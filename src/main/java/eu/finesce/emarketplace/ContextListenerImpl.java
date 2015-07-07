@@ -51,7 +51,7 @@ public class ContextListenerImpl implements ServletContextListener {
 	@Override
 	public void contextDestroyed(ServletContextEvent sce) {
 		//ServletContextEvent ctx = (ServletContextEvent) arg0.getServletContext();
-		sce.getServletContext().removeAttribute("FINKwCostantsMapps");
+		sce.getServletContext().removeAttribute("XFINKwCostantsMapps");
 		logger.info("REMOVE CONTEXT");
 		
 	}
@@ -88,12 +88,12 @@ public class ContextListenerImpl implements ServletContextListener {
 			logger.error("Error updateLoadPowerValue :",e);
 			logger.info("***URI is not absolute*** error is a normal error if the load object does not need a costant, you can ignore it!");
 		}
-        //
+        logger.info("Map created ? " + map.toString());
 //
 //      
 		//when map is ready add it as attribute to servlet context 
-        sc.setAttribute("KwCostantsMapps", map);
-        logger.info(sc.getAttribute("FINKwCostantsMapps").toString());
+        sc.setAttribute("XFINKwCostantsMapps", map);
+        logger.info(sc.getAttribute("XFINKwCostantsMapps").toString());
     }
 //    
 //    
