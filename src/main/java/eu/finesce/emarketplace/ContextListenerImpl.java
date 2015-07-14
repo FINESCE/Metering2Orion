@@ -51,7 +51,7 @@ public class ContextListenerImpl implements ServletContextListener {
 	@Override
 	public void contextDestroyed(ServletContextEvent sce) {
 		//ServletContextEvent ctx = (ServletContextEvent) arg0.getServletContext();
-		sce.getServletContext().removeAttribute("XFINKwCostantsMapps");
+		sce.getServletContext().removeAttribute("XKFINKwCostantsMapps");
 		logger.info("REMOVE CONTEXT");
 		
 	}
@@ -92,8 +92,8 @@ public class ContextListenerImpl implements ServletContextListener {
 //
 //      
 		//when map is ready add it as attribute to servlet context 
-        sc.setAttribute("XFINKwCostantsMapps", map);
-        logger.info(sc.getAttribute("XFINKwCostantsMapps").toString());
+        sc.setAttribute("XKFINKwCostantsMapps", map);
+        logger.info(sc.getAttribute("XKFINKwCostantsMapps").toString());
     }
 //    
 //    
