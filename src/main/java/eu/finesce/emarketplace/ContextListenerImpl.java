@@ -61,6 +61,11 @@ public class ContextListenerImpl implements ServletContextListener {
        
     	sc = sce.getServletContext();
         
+    	System.out.println("LISTA ATTRIBUTI : " + sc.getAttributeNames());
+    	if (sc.getAttributeNames() != null) {
+    	   sce.getServletContext().removeAttribute(sc.getAttributeNames().toString());
+    	}
+    	System.out.println("LISTA ATTRIBUTI DOPO REMOVE: " + sc.getAttributeNames());
         HashMap<String, String> map = new HashMap<String, String>();
         //... here you can create and initialize your HashMap
         try {
